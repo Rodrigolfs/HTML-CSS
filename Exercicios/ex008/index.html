@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortação de texto</title>
+    <style>
+       mark {
+           background-color: blue;
+       }
+
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1> <!--Existe duas formas de colocar o texto em negrito e em italico. uma maneira semantica e uma não semantica. as duas no momento são validas sendo que a tag "i" e a tag "b" pode virar obsoletas ja que são comandos vindo do html4 e no html5 tem comandos que fazem a mesma coisa que eles-->
+    <!--negrito e italico como conhecemos são formas, por isso quando o sentindo do uso dessas formas for com esse intuito se usa o css ja que é forma e não sentido. ja quando se usa negrito com sentido de destaque e italico com sentido de enfase se usa as tag "strong" e "em" do html ja que estaraá relacionado a semantica e nao a forma.-->
+    <h2>Negrito / Destaque</h2> 
+    <p>Nesta frase temos um <b>termo em negrito </b>usndo a tag b (não senmantica)</p>
+    <p>Nesta frase temos um <strong>termo em negrito </strong>usando a tag STRONG (semantica)</p>
+    <h2>Italico / Ênfase</h2>
+    <p>Nesta frase temos um <i>termo em italico</i> usando a tag i (não semântica)</p>
+    <p>Nesta frase temos um <em>termo em italico</em> usando a tag em (semântica)</p>
+    <h2>Texto Marcado (Marcador de Texto)</h2>
+    <p>Podemos criar tambem <mark style="background-color: lime;">um texto marcado</mark> usando a tag mark</p>
+    <!--no parametro "style" não esta fazendo html e sim css. Quando a formatação é pontual o melhor é utilizar o parametro "style" desta maneira, diretamenta "dentro" da tag. 
+    obs: se para o mouse na paravra lime aparece uma regua de cores.
+    como o parametro style desta tag é pontual, ela so modifica este paragrafo, o paragrafo abaixo não herda a mudança de cor que utilizei neste paragrafo.
+    Para mudar a cor das duas tag mark iguais, uma maneira é criar uma tag style no head, logo abaixo do title, e criar um seletor pra mark e coloca o background color-->
+    <p>E no outro parágrafo temos <mark> outro texto marcado</mark> no final</p>
+    <h2>Texto Grande e Pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small></p>
+    <!--Big esta obsoleto e small não. isto ocorre pq big é aumentar a letra e isto é forma (css) e não sentido. agora small tem por exemplo sentido quando se fala em contrato, aquelas letras pequenas.(opnião do guanabara)-->
+    <h2>Texto Deletado</h2>
+    <p>Podemos marcar um <del>texto com excluído</del> para indicar que ele deve ser lido, mas não considerado</p>
+    <h2>Texto Inserido</h2>
+    <p>Podemos marcar um <ins>texto como inserido</ins> para dar ênfase e indicar que ele foi adicionado depois (semantica)</p>
+    <p>Existe tambem o <u>sublinhado</u> com a tag U (não semântica)</p>
+    <h2>Texto Sobescrito</h2>
+    <p>É quando queremos levar algo a potencia. exemplo: este com a tag x<sup>20</sup>+3 e este sem a tag "sup" x20+3 </p>
+    <h2>Texto Subescrito</h2>
+    <p>É quando quer colocar numero ou letra embaixo. exemplo com a tag "sub" H<sub>2</sub>O e sem a tag "sub" H2O</p>
+</body>
+</html>

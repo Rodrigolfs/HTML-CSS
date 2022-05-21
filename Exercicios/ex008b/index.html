@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ept-be">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Social-Media-Icons-Glossy-Social-HTML5.ico" type="image/x-icon">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código-Fonte</h2>
+    <p>O comando document.getElementById('teste') é escrito em Java escript</p>
+    <!--se vc reparar esse texto document.getElementById, no site, algumas letras tem mais espaçamento do que outras como por exeplo o "g" do get tem mais espaço do que o "l" do Element. isto ocorre pq a fonte ela não é monoespaçada. entao se usa o comando code. entao essa tag code é otima para ler códigos  -->
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em Java escript</p>
+    <br>
+    <pre>
+        <code>
+            num = int(input('Digite um nemuro'))
+            if num % 2 == 0:
+                 print(f'O número {num} é PAR')
+            else:
+                 print(F'O número {num} é IMPAR')
+            print('Fim do programa')
+        </code>
+    </pre>
+    <code>
+            num = int(input('Digite um nemuro'))
+            if num % 2 == 0:
+                 print(f'O número {num} é PAR')
+            else:
+                 print(F'O número {num} é IMPAR')
+            print('Fim do programa')
+        </code>
+    <!--a tag "pre" ela deixa o formato do codigo no site como ele esta disposto no visual studio code.-->
+    <h2>Citações Simples</h2>
+    <p>Como diria um pai de um amigo: <q>o computador é um burro muito rápido</q></p>
+    <!--a tag "q" ele cria aspas no texto selecionado, é usado quando voce quer citar alguem, a fala de um terceiro. pq usa a tag "q" em vez de colocar manualmente as aspas? quando vc usa a tag "q" vc esta dando sentido ao texto-->
+    <h2>Citações Completas</h2>
+    <p>Segundo Jeff Nobel, no seu livro HTML para leigos:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_e_CSS_Para_Leigos/E8ZtDwAAQBAJ?hl=pt-BR&gbpv=1&dq=html+xhtml+e+css+para+leigos&printsec=frontcover">
+        A diferenca entre texo in line .....
+    </blockquote>
+    <!-- este "cite" não é obrigatorio e visualmente no site não vai mudar nada, mas a parte interna do google, dos sites de pesquisa vai saber que a frase que está no blockqueote está no livro do link que vc colocou. isto ajuda a manter os direitos da pessoa que vc citou-->
+    <!--a diferença entre a citação simples (q) e completa (blockquote) é que a primeira fica na mesma linha e so a aspas que faz o destaque da citação, ja no segundo tem uma quebra de linha e um deslocamento horizontal para a lateral direita-->
+    <h2>Abreviaçõs</h2>
+    <p>Estou estudando <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando</p>
+    <!--Se passar o mouse sobre as abreviaçoes no site irá aparecer o nome completo da abreviação-->
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">Rodrigo</bdo></p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+
+        *{ /*O asteristico significa configuração global para as CSS*/
+            height: 100%;
+        }
+
+         /*para fazer degrader usa o comando background-image e depois uma função interna linear-gradient, dentro do parenteses vc primeiro indica a direção (to right, to left, to top, to bottom, 90deg "angulo") e depois a quantidade de cores. Vc ainda pode colocar porcentagens depois das cores, isso vai mudar o tamanho que cada cor vai aparecer na tela*/
+        body{
+            background-image: linear-gradient(to bottom, #2E97E5, #B234AC, #D63086, #F97F28, #FDCB67);
+            background-attachment: fixed;
+
+
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Testando Gadriente</h1>
+    
+</body>
+</html>

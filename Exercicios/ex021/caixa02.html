@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tag</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+
+        }
+
+        nav{
+            background-color: rgb(152, 156, 160);
+            padding: 3px;
+            box-shadow: 1px 1px 1px black;
+
+        }
+
+        nav > a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 30px;
+        }
+        /*Border-radius pode ser feito como shorthand de duas maneiras. com 4 parametros ou 2 parametros*/
+
+        article{
+            background-color: lightslategray;
+        }
+
+        article > aside{
+            background-color: gray;
+        }
+
+        footer{
+            background-color: rgb(66, 55, 55);
+            color: white;
+            padding: 4px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        /*O box-shadow na "nav" na forma shorthand se escreve assim: "box-shadow: 1px 1px 1px cor" que significa deslocamento horizontal(1px), vertical(1px), espalhamento(1px) e sombra(cor)*/
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+
+        </nav>
+
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Politicas e Tecnologia</p>
+
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas praesentium optio unde. Quas eligendi explicabo suscipit deleniti distinctio alias obcaecati ducimus blanditiis ullam ipsa nihil illum consequatur, cum similique. Nisi?
+                </p>
+                <aside>
+                    <p>Artigo escrito por Jose da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por Rodrigo  Luis</p>
+
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{ /*box-level. para transformar o h1 em inline -level , é so escrever o comando "display: inline; lembrando que quando está em inline -level nao pode ter height(altura) e width(largura)*/
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            /*O border pode ser simplificado usando shorthand. Pode ser escrito da seguinte maneira "border: 10px solid darkslategray". essa sequencia corresponde ao comandos acima.*/
+
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /*A ordem para dispor os padding, não é obrigatorio, é sempre pensando no sentido horario. Primeiro top, depois right, bottom, left. A margin é igual
+            Aqui tambem pode ser usado um shorthand para simplificar. no caso ficaria "padding: 10px 10px 10px 10px". e poderia simplificar mais ainda, como todos os numeros sao iguais o comando poderia ficar assim "padding: 10px". 
+            Existe outra situação que é quando vc colocando um comando com dois valores por exemplo "padding: 10px 20px", neste caso ficaria top e bottom 10px e right e left 20px
+            */
+
+            margin-top: 50px;
+            margin-right: 10px;
+            margin-bottom: 60px;
+            margin-left: 10px;
+            /*Para centralizar caixa usa-se "margin: auto", se for um texto usa-se "text-alline: center"*/
+            /*Pode usar shorthand tb aqui: "margin: 50px 10px 60px 10px;
+            Para centralizar a caixa usando shorthand é so colocar"auto" na posiçao right e left como "margin: 50px auto 60px auto;*/
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+             /*Outline tb shorthand "outline: 5px dashed salmon;*/
+        }
+
+        a{/*inline - level. para transformar o "a" em box -level , é so escrever o comando "display: block;
+        Ainda tem o comando "display:inline-block" que você vai conseguir colocar altura e largura"
+        */
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragrafos tambem são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+    
+</body>
+</html>
